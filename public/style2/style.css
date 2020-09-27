@@ -1,0 +1,246 @@
+body {
+  max-width: 100%;
+}
+
+body,
+html {
+  margin: 0em;
+  padding:2em;
+  border: 0;
+}
+
+hgroup {
+  float: left;
+  margin: 0px;
+  color: grey;
+  width: 100%;
+  
+}
+
+hgroup > h1 {
+  margin-top: 30px;
+  margin-left: 250px;
+  color: black;
+  border-bottom: 0.01em solid;
+  border-color: gray;
+}
+
+hgroup > h2 {
+  display: block;
+}
+
+header figure {
+  position: absolute;
+  right: 20px;
+}
+
+header h2 {
+  display: none;
+}
+
+header figure img {
+  transform: rotate(-14deg);
+  width: 150px;
+  height: 150px;
+}
+
+
+
+.content {
+  margin: 0 auto;
+  padding: 8px;
+  max-width: 100%;
+}
+
+
+#about {
+  max-width: 640px;
+  color: gray;
+  margin-bottom: 100px;
+  font-style: italic;
+}
+#about > h3 {
+  display: none;
+}
+
+h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  margin-right: 10px;
+  font-style: italic;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+section {
+  float: left;
+  padding-left: 160px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.skills {
+  padding-top: 14px;
+}
+
+.skill {
+  width: 115px;
+  margin: 5px;
+  float: left;
+  padding: 10px;
+  background: teal;
+  color: white;
+}
+
+.skill span {
+  width: 130px;
+  display: inline-block;
+}
+
+.skill span::after {
+  content: "";
+  color: white;
+  display: block;
+  float: right;
+}
+
+.skill[data-skill="1"] span::after {
+  content: "★";
+}
+.skill[data-skill="1"] span::after {
+  content: "★";
+}
+.skill[data-skill="2"] span::after {
+  content: "★★";
+}
+.skill[data-skill="3"] span::after {
+  content: "★★";
+}
+.skill[data-skill="4"] span::after {
+  content: "★★★";
+}
+.skill[data-skill="5"] span::after {
+  content: "★★★";
+}
+.skill[data-skill="6"] span::after {
+  content: "★★★★";
+}
+.skill[data-skill="7"] span::after {
+  content: "★★★★";
+}
+.skill[data-skill="8"] span::after {
+  content: "★★★★★";
+}
+.skill[data-skill="9"] span::after {
+  content: "★★★★★";
+}
+.skill[data-skill="10"]span::after {
+  content: "★★★★★";
+}
+
+.skills-primary .skill {
+  font-size: 1.2em;
+}
+.skills-secondary .skill {
+  font-size: 0.7em;
+}
+
+#contact h3 {
+  display: none;
+}
+
+.contact {
+  margin: 0;
+  width: 130px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 50% 50%;
+  float: left;
+  display: block;
+  margin: 4px;
+}
+
+.contact:hover {
+  background-color: #0040ff;
+}
+
+.contact-type,
+.contact-value {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.contact-type {
+  display: none;
+}
+
+.contact-value a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.contact-skype {
+  display: none;
+}
+
+.contact-phone {
+  background-image: url("../images/phone.png");
+}
+.contact-email {
+  background-image: url("../images/email.png");
+}
+.contact-github {
+  background-image: url("../images/github.png");
+}
+.contact-facebook {
+  background-image: url("../images/facebook.png");
+}
+
+.experience-type {
+  color: #009090;
+}
+.experience-institution {
+  display: none;
+}
+.experience p {
+  margin-top: 30px;
+  float: left;
+}
+
+
+.experience-date {
+  float: right;
+  color: grey;
+}
+
+.experience-location {
+  color: grey;
+  margin-left: 660px;
+}
+
+@media only screen and (max-width: 600px) {
+  header figure {
+    display: none;
+  }
+
+
+  section {
+    padding-left: 0;
+  }
+
+  h3 {
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+}
